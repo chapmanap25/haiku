@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HaikuGenerator</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="haiku.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Haiku Generator</h1>
+
+<fieldset>
+    <label for="addedWord">Your word(include dashes between syllables)</label>
+    <input type="text" id="addedWord" required>
+</fieldset>
+<br>
+<button id="add">Add a word</button>
+<button id ="generateHaiku">Generate Haiku</button>
+<p><span id="toUser"></span></p>
+<p class="output"><span id="firstLine"></span></p>
+<p class="output"><span id="secondLine"></span></p>
+<p class="output"><span id="thirdLine"></span></p>
+</body>
+</html>
